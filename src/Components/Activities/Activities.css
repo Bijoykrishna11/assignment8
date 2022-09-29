@@ -9,3 +9,50 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
 }
+
+.timer {
+    padding: 10px;
+}
+
+.about {
+    background-color: rgb(199, 178, 152);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 10px;
+    color: white;
+
+}
+
+.timer h1,
+p {
+    display: flex;
+
+    justify-content: center;
+}
+
+.btn-break {
+    background-color: lightcyan;
+    height: 100px;
+}
+
+.btn-break button {
+    background-color: rgb(255, 255, 255);
+    margin-left: 5px;
+    height: 70%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    padding: 18px;
+}
+
+.finish {
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgb(84, 143, 143);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}

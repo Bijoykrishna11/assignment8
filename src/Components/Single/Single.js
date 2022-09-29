@@ -2,10 +2,17 @@ import './Single.css'
 import React from 'react';
 
 const Single = (props) => {
-    const { name, img, title, time } = props.single
+    const { img, title, time } = props.single
     return (
         <div className='single-item'>
-            <img src={img} alt="" />
+            <div>
+                <img src={img} alt="" />
+                <h1>{title}</h1>
+                <h3>Time spent:{time}min</h3>
+            </div>
+            <button className='btn'>
+                <p>Add to list</p>
+            </button>
         </div>
     );
 };
