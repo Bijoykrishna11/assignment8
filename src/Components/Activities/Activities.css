@@ -40,11 +40,10 @@
 
 .timer {
     padding: 10px;
-    background-color: aquamarine;
 }
 
 .about {
-    background-color: rgb(136, 86, 25);
+    background-color: rgb(199, 178, 152);
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,7 +88,6 @@ p {
 
 .bteak-time h4 {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     background-color: beige;
-    border-radius: 5px;
 }

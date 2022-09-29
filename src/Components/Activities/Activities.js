@@ -6,12 +6,17 @@ const Activities = () => {
 
     const [sports, setSports] = useState([]);
 
+
     useEffect(() => {
         fetch('time.json')
             .then(res => res.json())
             .then(data => setSports(data))
 
     }, [])
+
+    const handleAdd = (single) => {
+        console.log(single);
+    }
 
     return (
         <div className='container'>
@@ -20,6 +25,7 @@ const Activities = () => {
                     sports.map(single => <Single
                         key={single.id}
                         single={single}
+                        handleAdd={handleAdd}
 
                     ></Single>)
                 }
