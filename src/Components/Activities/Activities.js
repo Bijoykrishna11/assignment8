@@ -43,8 +43,9 @@ const Activities = () => {
                     <button>40 </button>
                 </div>
                 <h3>Details</h3>
-                <div>
-
+                <div className='bteak-time'>
+                    <h4>Time taken:</h4>
+                    <h4>Break:</h4>
                 </div>
 
                 <button className='finish'>Finish</button>

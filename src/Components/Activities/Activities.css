@@ -4,18 +4,47 @@
     margin: 100px;
 }
 
+@media only screen and (max-width: 488px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+}
+
 .event {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
 }
 
+@media only screen and (max-width: 488px) {
+
+    .event {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .event {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
 .timer {
     padding: 10px;
+    background-color: aquamarine;
 }
 
 .about {
-    background-color: rgb(199, 178, 152);
+    background-color: rgb(136, 86, 25);
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,4 +84,12 @@ p {
     border: none;
     border-radius: 10px;
     color: white;
+}
+
+
+.bteak-time h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: beige;
+    border-radius: 5px;
 }
