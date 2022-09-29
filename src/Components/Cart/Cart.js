@@ -1,8 +1,11 @@
 import React from 'react';
+import './Cart.css'
 
-const Cart = () => {
+const Cart = (props) => {
+    const { cart } = props;
+    console.log(cart)
     return (
-        <div>
+        <div className='cart'>
             <h1>Mr.Bijoy</h1>
             <p>Bhandaria,Pirojpur</p>
             <div className='about'>

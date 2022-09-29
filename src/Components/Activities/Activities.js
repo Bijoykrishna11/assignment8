@@ -6,6 +6,7 @@ import './Activities.css'
 const Activities = () => {
 
     const [sports, setSports] = useState([]);
+    const [cart, setCart] = useState([]);
 
 
     useEffect(() => {
@@ -17,6 +18,8 @@ const Activities = () => {
 
     const handleAdd = (single) => {
         console.log(single);
+        const newCart = [...cart, single];
+        setCart(newCart);
     }
 
     return (
