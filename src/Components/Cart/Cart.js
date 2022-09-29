@@ -1,9 +1,20 @@
 import React from 'react';
 import './Cart.css'
 
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 const Cart = (props) => {
     const { cart } = props;
     console.log(cart)
+
+
+    const notify = () => toast("Successfull !!!", { position: "top-center", theme: 'dark' })
+
+
     return (
         <div className='cart'>
             <h1>Mr.Bijoy</h1>
@@ -27,7 +38,8 @@ const Cart = (props) => {
                 <h4>Break:</h4>
             </div>
 
-            <button className='finish'>Finish</button>
+            <button onClick={notify} className='finish'>Finish</button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
